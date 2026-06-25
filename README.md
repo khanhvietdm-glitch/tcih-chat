@@ -89,6 +89,6 @@ from the authors on request.
 
 ## Reproducibility
 
-Tag the released commit, archive it (Zenodo) and cite the DOI. Record the Python
+The version of record is the tagged release `v1.0.0`. Record the Python
 version and `pip freeze` output. `python run_artifacts.py` regenerates
 `artifacts/results.json` deterministically.
