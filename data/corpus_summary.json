@@ -1,0 +1,194 @@
+[
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_1\\algebra_1.jsonl",
+    "out": "out\\data_1\\algebra_1.graph.jsonl",
+    "records": 17180,
+    "total_F": 136113,
+    "total_R": 118933,
+    "max_arity": 19
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_1\\applied_misc_1.jsonl",
+    "out": "out\\data_1\\applied_misc_1.graph.jsonl",
+    "records": 2,
+    "total_F": 12,
+    "total_R": 10,
+    "max_arity": 2
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_1\\calculus_analysis_1.jsonl",
+    "out": "out\\data_1\\calculus_analysis_1.graph.jsonl",
+    "records": 486,
+    "total_F": 3566,
+    "total_R": 3080,
+    "max_arity": 7
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_1\\geometry_1.jsonl",
+    "out": "out\\data_1\\geometry_1.graph.jsonl",
+    "records": 1888,
+    "total_F": 16502,
+    "total_R": 14614,
+    "max_arity": 12
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_1\\number_theory_arithmetic_1.jsonl",
+    "out": "out\\data_1\\number_theory_arithmetic_1.graph.jsonl",
+    "records": 4653,
+    "total_F": 32976,
+    "total_R": 28323,
+    "max_arity": 25
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_1\\probability_combinatorics_1.jsonl",
+    "out": "out\\data_1\\probability_combinatorics_1.graph.jsonl",
+    "records": 830,
+    "total_F": 6287,
+    "total_R": 5457,
+    "max_arity": 11
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_2\\algebra_2.jsonl",
+    "out": "out\\data_2\\algebra_2.graph.jsonl",
+    "records": 5123,
+    "total_F": 45646,
+    "total_R": 40523,
+    "max_arity": 18
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_2\\calculus_analysis_2.jsonl",
+    "out": "out\\data_2\\calculus_analysis_2.graph.jsonl",
+    "records": 133,
+    "total_F": 1011,
+    "total_R": 878,
+    "max_arity": 10
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_2\\geometry_2.jsonl",
+    "out": "out\\data_2\\geometry_2.graph.jsonl",
+    "records": 756,
+    "total_F": 7378,
+    "total_R": 6622,
+    "max_arity": 10
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_2\\number_theory_arithmetic_2.jsonl",
+    "out": "out\\data_2\\number_theory_arithmetic_2.graph.jsonl",
+    "records": 870,
+    "total_F": 7062,
+    "total_R": 6192,
+    "max_arity": 12
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_2\\probability_combinatorics_2.jsonl",
+    "out": "out\\data_2\\probability_combinatorics_2.graph.jsonl",
+    "records": 127,
+    "total_F": 1158,
+    "total_R": 1031,
+    "max_arity": 10
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_3\\algebra_3.jsonl",
+    "out": "out\\data_3\\algebra_3.graph.jsonl",
+    "records": 33358,
+    "total_F": 286291,
+    "total_R": 252933,
+    "max_arity": 18
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_3\\calculus_analysis_3.jsonl",
+    "out": "out\\data_3\\calculus_analysis_3.graph.jsonl",
+    "records": 442,
+    "total_F": 3278,
+    "total_R": 2836,
+    "max_arity": 7
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_3\\geometry_3.jsonl",
+    "out": "out\\data_3\\geometry_3.graph.jsonl",
+    "records": 1917,
+    "total_F": 16975,
+    "total_R": 15058,
+    "max_arity": 13
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_3\\number_theory_arithmetic_3.jsonl",
+    "out": "out\\data_3\\number_theory_arithmetic_3.graph.jsonl",
+    "records": 6554,
+    "total_F": 45524,
+    "total_R": 38970,
+    "max_arity": 11
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_3\\probability_combinatoric_3.jsonl",
+    "out": "out\\data_3\\probability_combinatoric_3.graph.jsonl",
+    "records": 1044,
+    "total_F": 7972,
+    "total_R": 6928,
+    "max_arity": 6
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\algebra.jsonl",
+    "out": "out\\data_4\\algebra.graph.jsonl",
+    "records": 76982,
+    "total_F": 718203,
+    "total_R": 641221,
+    "max_arity": 33
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\applied_misc.jsonl",
+    "out": "out\\data_4\\applied_misc.graph.jsonl",
+    "records": 41,
+    "total_F": 455,
+    "total_R": 414,
+    "max_arity": 6
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\calculus_analysis.jsonl",
+    "out": "out\\data_4\\calculus_analysis.graph.jsonl",
+    "records": 4958,
+    "total_F": 46222,
+    "total_R": 41264,
+    "max_arity": 9
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\geometry.jsonl",
+    "out": "out\\data_4\\geometry.graph.jsonl",
+    "records": 12869,
+    "total_F": 112476,
+    "total_R": 99607,
+    "max_arity": 14
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\logic_foundations.jsonl",
+    "out": "out\\data_4\\logic_foundations.graph.jsonl",
+    "records": 8,
+    "total_F": 56,
+    "total_R": 48,
+    "max_arity": 1
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\number_theory_arithmetic.jsonl",
+    "out": "out\\data_4\\number_theory_arithmetic.graph.jsonl",
+    "records": 33380,
+    "total_F": 275894,
+    "total_R": 242514,
+    "max_arity": 35
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\OtherType.jsonl",
+    "out": "out\\data_4\\OtherType.graph.jsonl",
+    "records": 41,
+    "total_F": 407,
+    "total_R": 366,
+    "max_arity": 5
+  },
+  {
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\datatoan\\instructor_v2\\data_4\\probability_combinatorics.jsonl",
+    "out": "out\\data_4\\probability_combinatorics.graph.jsonl",
+    "records": 8280,
+    "total_F": 68503,
+    "total_R": 60223,
+    "max_arity": 14
+  }
+]

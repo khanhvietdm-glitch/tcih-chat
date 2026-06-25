@@ -1,0 +1,12 @@
+{
+  "lean_version": "leanprover/lean4:v4.31.0 (no mathlib)",
+  "sample_claims": 120,
+  "both_decided": 109,
+  "lean_z3_agreement": 1.0,
+  "disagreements": [],
+  "lean_injection": {
+    "n": 30,
+    "recall": 0.9
+  },
+  "seconds": 656.0
+}

@@ -1,0 +1,16 @@
+{
+  "records": 1500,
+  "steps": 8701,
+  "seconds": 751.9,
+  "baseline_decidable_pct": 21.31,
+  "premise_context_decidable_pct": 33.89,
+  "full_context_decidable_pct": 35.63,
+  "problem_prose_extra_upgrades": 160,
+  "full_status_pct": {
+    "valid": 34.49,
+    "invalid": 1.02,
+    "rounding": 0.11,
+    "symbolic": 16.99,
+    "no_claim": 47.39
+  }
+}

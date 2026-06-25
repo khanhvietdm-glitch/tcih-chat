@@ -1,0 +1,33 @@
+{
+  "records": 5000,
+  "steps_checked": 29435,
+  "status_pct": {
+    "valid": 20.32,
+    "rounding": 0.1,
+    "invalid": 0.38,
+    "symbolic": 32.68,
+    "no_claim": 46.53
+  },
+  "ground_checkable_pct": 20.79,
+  "ground_validity_rate": 0.9817,
+  "genuine_arithmetic_errors_found": 112,
+  "rounding_equalities": 29,
+  "example_flagged_steps": [
+    "Step 18: Substituting these values into the equation, we have:\n\\[2 \\cdot 1 + 6 \\cdot 2 = 16\\]\n\\[2 + 12 = 16\\]",
+    "Step 2: Pedro has 20 gumballs + \\(3 \\cdot 20 = 20 + 60 = 80\\) gumballs.",
+    "Step 4: \\[(4 / 1) \\cdot $0.1 = $40\\]",
+    "Step 6: \\[0.4 = $40\\]",
+    "Step 2: \\[\\dfrac{18}{17}\\cdot\\dfrac{13}{24}\\cdot\\dfrac{68}{39}=\\dfrac{2\\cdot3^2}{17}\\cdot\\dfrac{13}{2^3\\cdot3}\\cdot\\dfrac{2^3\\cdot17}{3\\cdot13\\cdot3}=1\\cdot1\\cd",
+    "Step 9: Dividing both sides by 6, we find \\(q=\\frac{64}{6}=\\frac{32}{3}=10\\frac{2}{3}\\).",
+    "Step 1: We start by calculating \\[1 \\nabla 2\\]:\\[1 \\nabla 2 = \\frac{1 + 2}{1 + 1 \\times 2} = \\frac{3}{3} = 1.\\]",
+    "Step 2: Now we can substitute this result into \\((1 \\nabla 2) \\nabla 3\\):\\[(1 \\nabla 2) \\nabla 3 = 1 \\nabla 3 = \\frac{1 + 3}{1 + 1 \\times 3} = \\frac{4}{4} = 1.\\",
+    "Step 2: Let's break down the information given:\nTotal number of fights: \\(190\\)\nNumber of knockout fights: \\(50\\)\\% of \\(190 = 0.5 \\cdot 190 = 95\\)\nNumber of kn",
+    "Step 3: Together they earned $37, so \\(E + (E - 5) = 37\\)."
+  ],
+  "e4_injection": {
+    "n": 6003,
+    "recall": 0.9998
+  },
+  "seconds": 31.0,
+  "backend": "Z3 (rationals) + SymPy (radicals) fallback; Lean = interface stub"
+}

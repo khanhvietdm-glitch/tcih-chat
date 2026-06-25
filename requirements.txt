@@ -1,0 +1,17 @@
+# The TCIH symbolic CORE (model, check, prover, fold, granularity, search,
+# diagnose, chatbot) is dependency-free (Python standard library only, >= 3.10).
+#
+# The SMT/CAS SEMANTIC ORACLE (tcih/smt_oracle.py) and the full test suite need:
+sympy>=1.12        # CAS backend (exact radicals) for the semantic oracle
+z3-solver>=4.12    # SMT backend (rationals) for the semantic oracle
+#
+# Optional, for the Lean 4 kernel cross-check (tcih/lean_backend.py):
+#   install a core Lean toolchain via elan (no mathlib needed):
+#   curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain stable
+#
+# For the paper figures (make_figures.py):
+matplotlib>=3.5    # renders figures/fig_scaling.png and figures/fig_coverage.png
+#
+# Development:
+pytest>=7.0        # regression suite:  python -m pytest -q  (Lean test auto-skips if absent)
+# matplotlib>=3.5  # only for the legacy corpus visualiser (visualize.py)

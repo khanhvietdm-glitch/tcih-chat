@@ -1,0 +1,646 @@
+{
+  "gallery": [
+    {
+      "case": "a_imp_a",
+      "V": 2,
+      "E": 2,
+      "N": 12,
+      "wellformed": true,
+      "rules": {
+        "Assume": 1,
+        "ImpI": 1
+      }
+    },
+    {
+      "case": "modus_ponens",
+      "V": 3,
+      "E": 3,
+      "N": 24,
+      "wellformed": true,
+      "rules": {
+        "Assume": 2,
+        "ImpE": 1
+      }
+    },
+    {
+      "case": "hypothetical_syllogism",
+      "V": 6,
+      "E": 6,
+      "N": 64,
+      "wellformed": true,
+      "rules": {
+        "Assume": 3,
+        "ImpE": 2,
+        "ImpI": 1
+      }
+    },
+    {
+      "case": "modus_tollens",
+      "V": 6,
+      "E": 6,
+      "N": 57,
+      "wellformed": true,
+      "rules": {
+        "Assume": 3,
+        "ImpE": 1,
+        "NotE": 1,
+        "NotI": 1
+      }
+    },
+    {
+      "case": "demorgan_eq_fwd",
+      "V": 10,
+      "E": 10,
+      "N": 103,
+      "wellformed": true,
+      "rules": {
+        "Assume": 3,
+        "OrI1": 1,
+        "NotE": 2,
+        "NotI": 2,
+        "OrI2": 1,
+        "AndI": 1
+      }
+    },
+    {
+      "case": "demorgan_eq_bwd",
+      "V": 10,
+      "E": 10,
+      "N": 118,
+      "wellformed": true,
+      "rules": {
+        "Assume": 4,
+        "AndE1": 1,
+        "AndE2": 1,
+        "NotE": 2,
+        "OrE": 1,
+        "NotI": 1
+      }
+    },
+    {
+      "case": "bad_fold_base",
+      "V": 4,
+      "E": 4,
+      "N": 30,
+      "wellformed": true,
+      "rules": {
+        "Assume": 2,
+        "ImpI": 1,
+        "AndI": 1
+      }
+    }
+  ],
+  "prover": {
+    "rows": [
+      {
+        "goal": "A -> A",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 2,
+        "N": 12,
+        "verified": true,
+        "ms": 0.05
+      },
+      {
+        "goal": "A -> (B -> A)",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 4,
+        "N": 29,
+        "verified": true,
+        "ms": 0.04
+      },
+      {
+        "goal": "(A->B)->((B->C)->(A->C))",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 8,
+        "N": 108,
+        "verified": true,
+        "ms": 0.15
+      },
+      {
+        "goal": "A & B -> B & A",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 5,
+        "N": 54,
+        "verified": true,
+        "ms": 0.08
+      },
+      {
+        "goal": "A & B -> A",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 3,
+        "N": 29,
+        "verified": true,
+        "ms": 0.03
+      },
+      {
+        "goal": "A -> A | B",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 3,
+        "N": 25,
+        "verified": true,
+        "ms": 0.03
+      },
+      {
+        "goal": "(A->(B->C))->((A->B)->(A->C))",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 9,
+        "N": 140,
+        "verified": true,
+        "ms": 0.24
+      },
+      {
+        "goal": "A -> ~~A",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 5,
+        "N": 42,
+        "verified": true,
+        "ms": 0.05
+      },
+      {
+        "goal": "~(A|B) -> (~A & ~B)",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 11,
+        "N": 125,
+        "verified": true,
+        "ms": 0.17
+      },
+      {
+        "goal": "(~A & ~B) -> ~(A|B)",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 11,
+        "N": 140,
+        "verified": true,
+        "ms": 0.33
+      },
+      {
+        "goal": "(A&B->C) -> (A->(B->C))",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 8,
+        "N": 108,
+        "verified": true,
+        "ms": 0.15
+      },
+      {
+        "goal": "(A->(B->C))->(A&B->C)",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 8,
+        "N": 116,
+        "verified": true,
+        "ms": 0.21
+      },
+      {
+        "goal": "A&(B|C) -> (A&B)|(A&C)",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 12,
+        "N": 195,
+        "verified": true,
+        "ms": 0.48
+      },
+      {
+        "goal": "(A&B)|(A&C) -> A&(B|C)",
+        "from": [],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 15,
+        "N": 202,
+        "verified": true,
+        "ms": 1.07
+      },
+      {
+        "goal": "Q",
+        "from": [
+          "P",
+          "P->Q"
+        ],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 3,
+        "N": 24,
+        "verified": true,
+        "ms": 0.03
+      },
+      {
+        "goal": "A -> C",
+        "from": [
+          "A->B",
+          "B->C"
+        ],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 6,
+        "N": 64,
+        "verified": true,
+        "ms": 0.09
+      },
+      {
+        "goal": "~P",
+        "from": [
+          "P->Q",
+          "~Q"
+        ],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 6,
+        "N": 57,
+        "verified": true,
+        "ms": 0.09
+      },
+      {
+        "goal": "B",
+        "from": [
+          "A|B",
+          "~A"
+        ],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 7,
+        "N": 58,
+        "verified": true,
+        "ms": 0.07
+      },
+      {
+        "goal": "C",
+        "from": [
+          "A->C",
+          "B->C",
+          "A|B"
+        ],
+        "logic": "intuitionistic",
+        "proved": true,
+        "steps": 8,
+        "N": 78,
+        "verified": true,
+        "ms": 0.11
+      },
+      {
+        "goal": "A | ~A",
+        "from": [],
+        "logic": "classical",
+        "proved": true,
+        "steps": 8,
+        "N": 98,
+        "verified": true,
+        "ms": 0.27
+      },
+      {
+        "goal": "~~A -> A",
+        "from": [],
+        "logic": "classical",
+        "proved": true,
+        "steps": 5,
+        "N": 48,
+        "verified": true,
+        "ms": 0.07
+      },
+      {
+        "goal": "((A->B)->A)->A",
+        "from": [],
+        "logic": "classical",
+        "proved": true,
+        "steps": 10,
+        "N": 110,
+        "verified": true,
+        "ms": 0.31
+      },
+      {
+        "goal": "~(A&B) -> (~A|~B)",
+        "from": [],
+        "logic": "classical",
+        "proved": true,
+        "steps": 14,
+        "N": 200,
+        "verified": true,
+        "ms": 2.56
+      },
+      {
+        "goal": "(A->B) -> (~A | B)",
+        "from": [],
+        "logic": "classical",
+        "proved": true,
+        "steps": 11,
+        "N": 152,
+        "verified": true,
+        "ms": 0.9
+      },
+      {
+        "goal": "(~B->~A)->(A->B)",
+        "from": [],
+        "logic": "classical",
+        "proved": true,
+        "steps": 8,
+        "N": 103,
+        "verified": true,
+        "ms": 0.3
+      }
+    ],
+    "constructed": 25,
+    "verified": 25,
+    "total": 25
+  },
+  "granularity": [
+    {
+      "k": 1,
+      "macro_edges": 1,
+      "|G|": 3,
+      "|expand(G)|": 6,
+      "predicted": 6,
+      "law_holds": true,
+      "coarse_wellformed": true,
+      "expanded_wellformed": true,
+      "roundtrip_edges_match": true,
+      "outside_blocks_preserved": true
+    },
+    {
+      "k": 2,
+      "macro_edges": 2,
+      "|G|": 5,
+      "|expand(G)|": 11,
+      "predicted": 11,
+      "law_holds": true,
+      "coarse_wellformed": true,
+      "expanded_wellformed": true,
+      "roundtrip_edges_match": true,
+      "outside_blocks_preserved": true
+    },
+    {
+      "k": 3,
+      "macro_edges": 3,
+      "|G|": 7,
+      "|expand(G)|": 16,
+      "predicted": 16,
+      "law_holds": true,
+      "coarse_wellformed": true,
+      "expanded_wellformed": true,
+      "roundtrip_edges_match": true,
+      "outside_blocks_preserved": true
+    },
+    {
+      "k": 5,
+      "macro_edges": 5,
+      "|G|": 11,
+      "|expand(G)|": 26,
+      "predicted": 26,
+      "law_holds": true,
+      "coarse_wellformed": true,
+      "expanded_wellformed": true,
+      "roundtrip_edges_match": true,
+      "outside_blocks_preserved": true
+    },
+    {
+      "k": 8,
+      "macro_edges": 8,
+      "|G|": 17,
+      "|expand(G)|": 41,
+      "predicted": 41,
+      "law_holds": true,
+      "coarse_wellformed": true,
+      "expanded_wellformed": true,
+      "roundtrip_edges_match": true,
+      "outside_blocks_preserved": true
+    },
+    {
+      "k": 13,
+      "macro_edges": 13,
+      "|G|": 27,
+      "|expand(G)|": 66,
+      "predicted": 66,
+      "law_holds": true,
+      "coarse_wellformed": true,
+      "expanded_wellformed": true,
+      "roundtrip_edges_match": true,
+      "outside_blocks_preserved": true
+    }
+  ],
+  "astar": {
+    "counterexample": {
+      "h_star": 5,
+      "h": 10,
+      "upper_bound_b": 8,
+      "min_h_b": 8,
+      "still_inadmissible": true,
+      "fix": "use a certified lower bound h̲ with 0 ≤ h̲ ≤ h*"
+    },
+    "demo": {
+      "optimal_cost": 4.0,
+      "optimal_path": [
+        "S",
+        "A",
+        "C",
+        "G"
+      ],
+      "admissible_returns_optimal": true,
+      "inadmissible_cost": 5.0,
+      "inadmissible_path": [
+        "S",
+        "G"
+      ],
+      "inadmissible_suboptimal": true
+    }
+  },
+  "horn_demo": {
+    "closure": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "derived_by": {
+      "b": 0,
+      "c": 1,
+      "d": 2
+    },
+    "rules_fired": 3
+  },
+  "scaling": [
+    {
+      "k": 5,
+      "V": 26,
+      "E": 26,
+      "N": 408,
+      "us_per_check": 248.4,
+      "us_per_N": 0.6087
+    },
+    {
+      "k": 10,
+      "V": 51,
+      "E": 51,
+      "N": 1108,
+      "us_per_check": 542.8,
+      "us_per_N": 0.4899
+    },
+    {
+      "k": 20,
+      "V": 101,
+      "E": 101,
+      "N": 3408,
+      "us_per_check": 1475.0,
+      "us_per_N": 0.4328
+    },
+    {
+      "k": 40,
+      "V": 201,
+      "E": 201,
+      "N": 11608,
+      "us_per_check": 3760.0,
+      "us_per_N": 0.3239
+    },
+    {
+      "k": 80,
+      "V": 401,
+      "E": 401,
+      "N": 42408,
+      "us_per_check": 12221.0,
+      "us_per_N": 0.2882
+    },
+    {
+      "k": 160,
+      "V": 801,
+      "E": 801,
+      "N": 161608,
+      "us_per_check": 42082.1,
+      "us_per_N": 0.2604
+    },
+    {
+      "k": 320,
+      "V": 1601,
+      "E": 1601,
+      "N": 630408,
+      "us_per_check": 297062.4,
+      "us_per_N": 0.4712
+    }
+  ],
+  "error_detection": {
+    "base_correct_proofs": 25,
+    "false_rejection_rate": 0.0,
+    "per_class": {
+      "E1": {
+        "n": 25,
+        "recall": 1.0,
+        "localization": 1.0
+      },
+      "E2": {
+        "n": 25,
+        "recall": 1.0,
+        "localization": 1.0
+      },
+      "E3": {
+        "n": 25,
+        "recall": 1.0,
+        "localization": 1.0
+      },
+      "E4": {
+        "n": 11,
+        "recall": 0.818,
+        "localization": 1.0
+      }
+    },
+    "macro_recall": 0.955
+  },
+  "ablation": {
+    "full_tcih_recall": {
+      "E1": 1.0,
+      "E2": 1.0,
+      "E3": 1.0,
+      "E4": 0.818
+    },
+    "formula_only_recall": {
+      "E1": 1.0,
+      "E2": 0.0,
+      "E3": 0.0,
+      "E4": 0.818
+    },
+    "note": "formula-only = proof-DAG without labelled context or discharge IDs"
+  },
+  "real_corpus": {
+    "available": true,
+    "totals": {
+      "records": 211922,
+      "F": 1839967,
+      "R": 1628045,
+      "max_arity": 35,
+      "files": 24
+    },
+    "by_domain": {
+      "algebra": {
+        "records": 132643,
+        "F": 1186253,
+        "R": 1053610,
+        "max_arity": 33
+      },
+      "applied_misc": {
+        "records": 43,
+        "F": 467,
+        "R": 424,
+        "max_arity": 6
+      },
+      "calculus_analysis": {
+        "records": 6019,
+        "F": 54077,
+        "R": 48058,
+        "max_arity": 10
+      },
+      "geometry": {
+        "records": 17430,
+        "F": 153331,
+        "R": 135901,
+        "max_arity": 14
+      },
+      "number_theory_arithmetic": {
+        "records": 45457,
+        "F": 361456,
+        "R": 315999,
+        "max_arity": 35
+      },
+      "probability_combinatorics": {
+        "records": 9237,
+        "F": 75948,
+        "R": 66711,
+        "max_arity": 14
+      },
+      "probability_combinatoric": {
+        "records": 1044,
+        "F": 7972,
+        "R": 6928,
+        "max_arity": 6
+      },
+      "logic_foundations": {
+        "records": 8,
+        "F": 56,
+        "R": 48,
+        "max_arity": 1
+      },
+      "OtherType": {
+        "records": 41,
+        "F": 407,
+        "R": 366,
+        "max_arity": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "records": 2000,
+  "steps": 11700,
+  "seconds": 504.0,
+  "baseline_decidable_pct": 21.13,
+  "contextual_decidable_pct": 30.32,
+  "coverage_gain_pct_points": 9.2,
+  "symbolic_upgraded_by_context": 1076,
+  "extra_invalids_with_context": 41,
+  "baseline_status_pct": {
+    "valid": 20.59,
+    "invalid": 0.42,
+    "rounding": 0.12,
+    "symbolic": 32.14,
+    "no_claim": 46.74
+  },
+  "contextual_status_pct": {
+    "valid": 29.47,
+    "invalid": 0.77,
+    "rounding": 0.09,
+    "symbolic": 22.94,
+    "no_claim": 46.74
+  }
+}

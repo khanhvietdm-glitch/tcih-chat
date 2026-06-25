@@ -1,0 +1,55 @@
+{
+  "records_evaluated": 30000,
+  "rule_class_distribution_pct": {
+    "Compute": 36.76,
+    "Conclude": 24.59,
+    "Generic": 11.97,
+    "Solve": 9.19,
+    "Define": 9.06,
+    "ApplyFact": 7.03,
+    "Compare": 1.09,
+    "Convert": 0.3
+  },
+  "legacy_edge_provenance_pct": {
+    "sequential_default": 57.72,
+    "value_match": 29.39,
+    "final_answer": 12.89,
+    "explicit_ref": 0.0
+  },
+  "new_edge_provenance_pct": {
+    "hypothesis": 64.0,
+    "value": 21.68,
+    "answer": 14.32,
+    "explicit": 0.0
+  },
+  "multi_source_pct_new": 8.38,
+  "structural_wellformed_pct": 100.0,
+  "acyclic_pct": 100.0,
+  "checker_us_per_N": 1.3999,
+  "error_detection": {
+    "clean_proofs": 4000,
+    "false_rejection_rate": 0.0,
+    "per_class": {
+      "cycle": {
+        "n": 4000,
+        "recall": 1.0,
+        "localization": null
+      },
+      "dangling_ref": {
+        "n": 4000,
+        "recall": 1.0,
+        "localization": 1.0
+      },
+      "missing_justification": {
+        "n": 4000,
+        "recall": 1.0,
+        "localization": 1.0
+      },
+      "missing_dependency": {
+        "n": 2536,
+        "recall": 1.0,
+        "localization": 1.0
+      }
+    }
+  }
+}

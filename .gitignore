@@ -1,0 +1,22 @@
+# Large / regenerable artefacts — NOT committed (see data/README.md)
+# 617 MB parsed corpus (full D4) -> released separately
+out/
+# multi-GB Lean+mathlib build (provision via elan + lake)
+leanmath/
+__pycache__/
+*.pyc
+*.pyo
+_chk/
+_docxcheck/
+_roundtrip.md
+
+# internal / working documents — do NOT publish
+reviewer_report.md
+original_paper.md
+references.md
+report_summary.py
+smoke_test.py
+
+# keep: tcih/ tests/ paper/ figures/ artifacts/*.json data/sample/
+#       data/corpus_summary.json data/README.md *.py *.docx README.md
+#       requirements.txt LICENSE
