@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TCIH-Chat: A Context-Aware Event-Hypergraph Framework and Conversational Assistant for Automated Construction and Structural Diagnosis of Mathematical Proofs"
+type: software
+version: 1.0.0
+date-released: "2026-06-25"
+license: MIT
+repository-code: "https://github.com/khanhvietdm-glitch/tcih-chat"
+keywords:
+  - automated theorem proving
+  - neuro-symbolic AI
+  - proof verification
+  - natural deduction
+  - inference hypergraph
+  - LLM proof diagnosis
+authors:
+  - family-names: Nguyen
+    given-names: Truong Thang
+    affiliation: "Institute of Information Technology (IOIT), VAST"
+  - family-names: Truong
+    given-names: Thi Minh Ngoc
+    affiliation: "Institute of Information Technology (IOIT), VAST"
+  - family-names: Le
+    given-names: Thi Thuy Giang
+    affiliation: "Graduate University of Science and Technology (GUST), VAST"
+  - family-names: Vuong
+    given-names: Quang Phuong
+    affiliation: "Institute of Information Technology (IOIT), VAST"
+  - family-names: Do
+    given-names: Thi Loan
+    affiliation: "Institute of Information Technology (IOIT), VAST"
+  - family-names: Pham
+    given-names: Van Khanh
+    affiliation: "Institute of Information Technology (IOIT), VAST"
+    email: khanhvietdm@gmail.com

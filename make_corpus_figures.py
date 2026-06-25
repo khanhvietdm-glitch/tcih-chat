@@ -62,17 +62,21 @@ def render(rec: Dict, title: str, out_png: Path):
 
     for f in V_F:
         x, y = fx[f["id"]]
+        # ANONYMIZED: show only structure (ids/kinds), never the source prose.
         if f["kind"] == "derived":
-            top, body = f"F{f['step']}", wrap(f["text"].split(":", 1)[-1].strip(), 22, 3)
+            top, body = f"F{f['step']}", ""
         elif f["kind"] == "hypothesis":
-            top, body = "F0 (hypothesis)", wrap(f["text"], 22, 4)
+            top, body = "F0", "(problem)"
         else:
-            top, body = "Goal", wrap(str(f.get("answer", f["text"])), 18, 2)
+            top, body = "Goal", "(answer)"
         ax.add_patch(FancyBboxPatch((x - 0.46, y - 0.30), 0.92, 0.60,
                      boxstyle="round,pad=0.02", facecolor=COL[f["kind"]],
                      edgecolor="black", linewidth=0.8, zorder=3))
-        ax.text(x, y + 0.20, top, ha="center", va="center", fontsize=8, fontweight="bold", zorder=4)
-        ax.text(x, y - 0.05, body, ha="center", va="center", fontsize=6.3, zorder=4)
+        ax.text(x, y + (0.16 if body else 0.0), top, ha="center", va="center",
+                fontsize=8.5, fontweight="bold", zorder=4)
+        if body:
+            ax.text(x, y - 0.10, body, ha="center", va="center", fontsize=7,
+                    style="italic", color="#555", zorder=4)
 
     for f in V_F:
         fid = f["id"]
@@ -146,9 +150,7 @@ def main():
             print("missing", p); continue
         rec = pick(p, idx)
         slug = "corpus_" + rel.split("/")[-1].replace(".graph.jsonl", "")
-        prob = rec["problem"][:88].replace("\n", " ")
-        render(rec, f"{label}\nproblem: {prob}{'…' if len(rec['problem'])>88 else ''}",
-               FIG / f"{slug}.png")
+        render(rec, f"{label}  (anonymized: structure only)", FIG / f"{slug}.png")
         print("wrote", FIG / f"{slug}.png")
 
 

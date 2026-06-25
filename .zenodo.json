@@ -1,0 +1,24 @@
+{
+  "title": "TCIH-Chat: A Context-Aware Event-Hypergraph Framework and Conversational Assistant for Automated Construction and Structural Diagnosis of Mathematical Proofs",
+  "description": "Reference implementation and reproducibility artefact for the paper of the same name (submitted to Expert Systems with Applications). Includes the corrected typed contextual inference hypergraph (TCIH) model, the TCIH-Chat assistant (a terminating intuitionistic prover and natural-deduction synthesizer, a linear-time structural checker, a four-tier SMT/CAS/Lean semantic oracle, and proof-error diagnosis with localization), a regression suite with one machine-checked test per corrected theorem, deterministic artefact generators, the manuscript with figures, and a structure-only sample of the proof-graph corpus (the full structure-only corpus is attached as a release asset).",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {"name": "Nguyen, Truong Thang", "affiliation": "Institute of Information Technology (IOIT), Vietnam Academy of Science and Technology (VAST)"},
+    {"name": "Truong, Thi Minh Ngoc", "affiliation": "Institute of Information Technology (IOIT), Vietnam Academy of Science and Technology (VAST)"},
+    {"name": "Le, Thi Thuy Giang", "affiliation": "Graduate University of Science and Technology (GUST), Vietnam Academy of Science and Technology (VAST)"},
+    {"name": "Vuong, Quang Phuong", "affiliation": "Institute of Information Technology (IOIT), Vietnam Academy of Science and Technology (VAST)"},
+    {"name": "Do, Thi Loan", "affiliation": "Institute of Information Technology (IOIT), Vietnam Academy of Science and Technology (VAST)"},
+    {"name": "Pham, Van Khanh", "affiliation": "Institute of Information Technology (IOIT), Vietnam Academy of Science and Technology (VAST)"}
+  ],
+  "keywords": [
+    "automated theorem proving", "neuro-symbolic AI", "proof verification",
+    "natural deduction", "inference hypergraph", "LLM proof diagnosis",
+    "intelligent tutoring", "SMT", "Lean", "mathematics chatbot"
+  ],
+  "related_identifiers": [
+    {"identifier": "https://github.com/khanhvietdm-glitch/tcih-chat", "relation": "isSupplementTo", "scheme": "url"}
+  ],
+  "version": "1.0.0"
+}
