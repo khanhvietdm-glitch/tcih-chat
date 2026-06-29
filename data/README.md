@@ -64,8 +64,9 @@ python run_lean_eval.py       # Table 16 (Lean–Z3 agreement) [needs a Lean too
 
 ## Provenance and licence
 
-The proofs are parsed from step-structured mathematics solutions (`instructor_v2`).
-**Redistribution of the underlying solution text is the responsibility of the
-authors and must respect the source dataset's licence.** The parsing code and the
-derived graph structures in this repository are released under the repository's
-MIT licence; the *content* of the solutions retains the licence of its source.
+The proofs are parsed from a step-structured mathematics-solution corpus
+**assembled/compiled by the authors** (internal working name `instructor_v2`).
+The public release is **structure-only** — the solution text is removed; the
+authors hold the compiled solutions and can provide the text on request. The
+parsing code and the derived graph structures in this repository are released
+under the repository's MIT licence.

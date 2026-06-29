@@ -7,7 +7,7 @@ We separate what is **measured in this paper** from what the protocol is **desig
 - **D1 — Corrected case studies (gallery).** Seven hand-built derivations exercising the model: $A\Rightarrow A$, modus ponens, hypothetical syllogism, modus tollens, both directions of the intuitionistic De Morgan equivalence $\neg(A\vee B)\dashv\vdash(\neg A\wedge\neg B)$, and the $(A\Rightarrow A)\wedge A$ folding witness. Each is checked for well-formedness.
 - **D2 — Construction benchmark.** Twenty-five propositional theorems (nineteen intuitionistic, six classical), including the K and S combinators, distribution laws, the De Morgan family, and inferences from assumptions (modus tollens, disjunctive syllogism, case analysis). For each, the engine must construct a derivation that independently passes structural verification *and* the semantic oracle.
 - **D3 — Synthetic ground-truth error corpus.** From each correct benchmark proof we generate one variant per structural/semantic class by the injection harness: E1 (drop a premise), E2 (corrupt a target context), E3 (discharge a non-open identifier), E4 (replace a sound step by a formal fallacy, e.g. affirming the consequent). Each variant carries a ground-truth label *(class, locus)*. This corpus yields **real** detection and localization measurements because the labels are known by construction.
-- **D4 — Real proof-graph corpus.** A pipeline (`proof_graph_parser.py`) ingests $211{,}922$ step-structured solutions across algebra, number theory, geometry, calculus, and probability/combinatorics into two-level proof graphs, giving the structural statistics that motivate the design (node counts, arities).
+- **D4 — Real proof-graph corpus.** An **in-house corpus assembled by the authors** — $211{,}922$ step-structured solutions across algebra, number theory, geometry, calculus, and probability/combinatorics — is ingested by a pipeline (`proof_graph_parser.py`) into two-level proof graphs, giving the structural statistics that motivate the design (node counts, arities). The corpus was compiled by the authors; its public release is structure-only (Data-availability statement).
 - **D5 — Upgraded-parser corpus and the annotated extension.** The rule-classifying parser (`nl_parser`) realizes the D4→D5 upgrade: it re-derives faithful structure and a rule classification for the real corpus, on which §8.9 reports a measured error-detection evaluation (real proof structures, injected ground-truth faults). The *fully annotated* human/LLM corpus — proofs in a logical fragment labelled with E1–E6, error locus, scope, and ground-truth validity, for evaluating *semantic* and *naturally occurring* errors — remains the principal outstanding data task (§9).
 
 ## 7.2. Baselines
@@ -130,7 +130,7 @@ Structural checking is empirically **linear** in the encoded input size $N$: acr
 
 ## 8.8. Real proof-graph corpus (measured)
 
-The ingestion pipeline converts $211{,}922$ real step-structured solutions into two-level proof graphs totalling $1{,}839{,}967$ formula-nodes and $1{,}628{,}045$ rule-nodes, across the domains of Table 10.
+The ingestion pipeline converts the authors' in-house corpus of $211{,}922$ step-structured solutions — compiled by the authors across the domains of Table 10 — into two-level proof graphs totalling $1{,}839{,}967$ formula-nodes and $1{,}628{,}045$ rule-nodes.
 
 | Domain | proofs | formula-nodes | rule-nodes | max arity |
 |--------|-------:|--------------:|-----------:|----------:|
